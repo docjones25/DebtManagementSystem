@@ -1,0 +1,11 @@
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\bin\Debug\DebtManagementSystem.exe.config
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\bin\Debug\DebtManagementSystem.exe
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\bin\Debug\DebtManagementSystem.pdb
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.csproj.AssemblyReference.cache
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.AddItem.resources
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.Main_Menu.resources
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.Properties.Resources.resources
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.csproj.GenerateResource.cache
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.exe
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.pdb
