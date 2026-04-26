@@ -34,7 +34,6 @@ namespace DebtManagementSystem
                         Directory.CreateDirectory(resourcesPath);
                     }
 
-                    // Copy file into Resources folder
                     int counter = 1;
                     string extension = Path.GetExtension(ofd.FileName);
                     string baseName = Path.GetFileNameWithoutExtension(ofd.FileName);
