@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.addItemBTN = new System.Windows.Forms.Button();
-            this.selectItemBTN = new System.Windows.Forms.Button();
+            this.CustomuerBTN = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.transactionBTN = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -46,15 +46,15 @@
             this.addItemBTN.UseVisualStyleBackColor = true;
             this.addItemBTN.Click += new System.EventHandler(this.addItemBTN_Click);
             // 
-            // selectItemBTN
+            // CustomuerBTN
             // 
-            this.selectItemBTN.Location = new System.Drawing.Point(366, 262);
-            this.selectItemBTN.Name = "selectItemBTN";
-            this.selectItemBTN.Size = new System.Drawing.Size(184, 48);
-            this.selectItemBTN.TabIndex = 1;
-            this.selectItemBTN.Text = "Select Item";
-            this.selectItemBTN.UseVisualStyleBackColor = true;
-            this.selectItemBTN.Click += new System.EventHandler(this.button2_Click);
+            this.CustomuerBTN.Location = new System.Drawing.Point(366, 262);
+            this.CustomuerBTN.Name = "CustomuerBTN";
+            this.CustomuerBTN.Size = new System.Drawing.Size(184, 48);
+            this.CustomuerBTN.TabIndex = 1;
+            this.CustomuerBTN.Text = "Customer";
+            this.CustomuerBTN.UseVisualStyleBackColor = true;
+            this.CustomuerBTN.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -102,7 +102,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.transactionBTN);
-            this.Controls.Add(this.selectItemBTN);
+            this.Controls.Add(this.CustomuerBTN);
             this.Controls.Add(this.addItemBTN);
             this.Name = "Main_Menu";
             this.Text = "Form1";
@@ -114,7 +114,7 @@
         #endregion
 
         private System.Windows.Forms.Button addItemBTN;
-        private System.Windows.Forms.Button selectItemBTN;
+        private System.Windows.Forms.Button CustomuerBTN;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button transactionBTN;
         private System.Windows.Forms.Button button5;
