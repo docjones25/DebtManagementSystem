@@ -10,21 +10,12 @@ using System.Windows.Forms;
 
 namespace DebtManagementSystem
 {
-    public partial class Product : Form
+    public partial class AddProduct : Form
     {
-        public Product()
+        public AddProduct()
         {
             InitializeComponent();
         }
 
-
-
-
-        private void backBtn_Click(object sender, EventArgs e)
-        {
-            Main_Menu mainMenu = new Main_Menu();
-            mainMenu.Show();
-            this.Hide();
-        }
     }
 }
