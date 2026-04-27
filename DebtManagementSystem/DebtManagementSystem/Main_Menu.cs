@@ -17,15 +17,6 @@ namespace DebtManagementSystem
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void addItemBTN_Click(object sender, EventArgs e)
-        {
-            AddItem add = new AddItem();
-            add.Show();
-        }
     }
 }

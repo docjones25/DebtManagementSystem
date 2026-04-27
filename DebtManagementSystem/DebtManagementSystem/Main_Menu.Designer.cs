@@ -28,60 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.addItemBTN = new System.Windows.Forms.Button();
-            this.CustomuerBTN = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.transactionBTN = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.customerBtn = new System.Windows.Forms.Button();
+            this.flappyJudsBtn = new System.Windows.Forms.Button();
+            this.productsBtn = new System.Windows.Forms.Button();
+            this.exitBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.transactionBtn = new System.Windows.Forms.Button();
+            this.dashboardBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // addItemBTN
+            // customerBtn
             // 
-            this.addItemBTN.Location = new System.Drawing.Point(366, 208);
-            this.addItemBTN.Name = "addItemBTN";
-            this.addItemBTN.Size = new System.Drawing.Size(184, 48);
-            this.addItemBTN.TabIndex = 0;
-            this.addItemBTN.Text = "DashBoard";
-            this.addItemBTN.UseVisualStyleBackColor = true;
-            this.addItemBTN.Click += new System.EventHandler(this.addItemBTN_Click);
+            this.customerBtn.Location = new System.Drawing.Point(366, 262);
+            this.customerBtn.Name = "customerBtn";
+            this.customerBtn.Size = new System.Drawing.Size(184, 48);
+            this.customerBtn.TabIndex = 1;
+            this.customerBtn.Text = "Customer";
+            this.customerBtn.UseVisualStyleBackColor = true;
             // 
-            // CustomuerBTN
+            // flappyJudsBtn
             // 
-            this.CustomuerBTN.Location = new System.Drawing.Point(366, 262);
-            this.CustomuerBTN.Name = "CustomuerBTN";
-            this.CustomuerBTN.Size = new System.Drawing.Size(184, 48);
-            this.CustomuerBTN.TabIndex = 1;
-            this.CustomuerBTN.Text = "Customer";
-            this.CustomuerBTN.UseVisualStyleBackColor = true;
-            this.CustomuerBTN.Click += new System.EventHandler(this.button2_Click);
+            this.flappyJudsBtn.Location = new System.Drawing.Point(366, 424);
+            this.flappyJudsBtn.Name = "flappyJudsBtn";
+            this.flappyJudsBtn.Size = new System.Drawing.Size(184, 48);
+            this.flappyJudsBtn.TabIndex = 3;
+            this.flappyJudsBtn.Text = "Flappy Juds";
+            this.flappyJudsBtn.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // productsBtn
             // 
-            this.button3.Location = new System.Drawing.Point(366, 370);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(184, 48);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Flappy Juds";
-            this.button3.UseVisualStyleBackColor = true;
+            this.productsBtn.Location = new System.Drawing.Point(366, 316);
+            this.productsBtn.Name = "productsBtn";
+            this.productsBtn.Size = new System.Drawing.Size(184, 48);
+            this.productsBtn.TabIndex = 2;
+            this.productsBtn.Text = "Products";
+            this.productsBtn.UseVisualStyleBackColor = true;
             // 
-            // transactionBTN
+            // exitBtn
             // 
-            this.transactionBTN.Location = new System.Drawing.Point(366, 316);
-            this.transactionBTN.Name = "transactionBTN";
-            this.transactionBTN.Size = new System.Drawing.Size(184, 48);
-            this.transactionBTN.TabIndex = 2;
-            this.transactionBTN.Text = "Transactions";
-            this.transactionBTN.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(366, 424);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(184, 48);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Exit";
-            this.button5.UseVisualStyleBackColor = true;
+            this.exitBtn.Location = new System.Drawing.Point(366, 478);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(184, 48);
+            this.exitBtn.TabIndex = 4;
+            this.exitBtn.Text = "Exit";
+            this.exitBtn.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -93,17 +83,36 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "DEBT MANAGEMENT SYSTEM";
             // 
+            // transactionBtn
+            // 
+            this.transactionBtn.Location = new System.Drawing.Point(366, 370);
+            this.transactionBtn.Name = "transactionBtn";
+            this.transactionBtn.Size = new System.Drawing.Size(184, 48);
+            this.transactionBtn.TabIndex = 6;
+            this.transactionBtn.Text = "Transaction";
+            this.transactionBtn.UseVisualStyleBackColor = true;
+            // 
+            // dashboardBtn
+            // 
+            this.dashboardBtn.Location = new System.Drawing.Point(366, 208);
+            this.dashboardBtn.Name = "dashboardBtn";
+            this.dashboardBtn.Size = new System.Drawing.Size(184, 48);
+            this.dashboardBtn.TabIndex = 7;
+            this.dashboardBtn.Text = "Dashboard";
+            this.dashboardBtn.UseVisualStyleBackColor = true;
+            // 
             // Main_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(953, 648);
+            this.Controls.Add(this.dashboardBtn);
+            this.Controls.Add(this.transactionBtn);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.transactionBTN);
-            this.Controls.Add(this.CustomuerBTN);
-            this.Controls.Add(this.addItemBTN);
+            this.Controls.Add(this.exitBtn);
+            this.Controls.Add(this.flappyJudsBtn);
+            this.Controls.Add(this.productsBtn);
+            this.Controls.Add(this.customerBtn);
             this.Name = "Main_Menu";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -112,13 +121,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button addItemBTN;
-        private System.Windows.Forms.Button CustomuerBTN;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button transactionBTN;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button customerBtn;
+        private System.Windows.Forms.Button flappyJudsBtn;
+        private System.Windows.Forms.Button productsBtn;
+        private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button transactionBtn;
+        private System.Windows.Forms.Button dashboardBtn;
     }
 }
 
