@@ -17,5 +17,9 @@ namespace DebtManagementSystem
             InitializeComponent();
         }
 
+        private void categoryList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

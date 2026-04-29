@@ -20,29 +20,29 @@ namespace DebtManagementSystem
         private void dashboardBtn_Click(object sender, EventArgs e)
         {
             Dashboard dashboard = new Dashboard();
-            dashboard.Show();
             this.Hide();
+            dashboard.Show();
         }
 
         private void customerBtn_Click(object sender, EventArgs e)
         {
             Customer customer = new Customer();
-            customer.Show();
             this.Hide();
+            customer.Show();
         }
 
         private void productsBtn_Click(object sender, EventArgs e)
         {
             Product product = new Product();
-            product.Show();
             this.Hide();
+            product.Show();
         }
 
         private void transactionBtn_Click(object sender, EventArgs e)
         {
             Transaction transaction = new Transaction();
-            transaction.Show();
             this.Hide();
+            transaction.Show();
         }
 
         private void flappyJudsBtn_Click(object sender, EventArgs e)
