@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0">
   <diagram name="Page-1" id="2gwi0qmPzUIGkJV1Zvn8">
-    <mxGraphModel dx="2044" dy="1128" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1362" dy="597" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,7 +13,7 @@
         <mxCell id="PkTbunAqFMuEDqFepPEY-6" edge="1" parent="1" source="PkTbunAqFMuEDqFepPEY-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="PkTbunAqFMuEDqFepPEY-5" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PkTbunAqFMuEDqFepPEY-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ADD Items&lt;div&gt;SELECT Items&lt;/div&gt;&lt;div&gt;Transactions&lt;/div&gt;&lt;div&gt;Flappy Juds&lt;/div&gt;&lt;div&gt;Exit&lt;/div&gt;" vertex="1">
+        <mxCell id="PkTbunAqFMuEDqFepPEY-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Dashboard&lt;div&gt;Customer&amp;nbsp;&lt;/div&gt;&lt;div&gt;Products&lt;/div&gt;&lt;div&gt;Transaction&lt;/div&gt;&lt;div&gt;Flappy Juds&lt;/div&gt;&lt;div&gt;Exit&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="120" x="310" y="200" as="geometry" />
         </mxCell>
         <mxCell id="PkTbunAqFMuEDqFepPEY-4" edge="1" parent="1" source="PkTbunAqFMuEDqFepPEY-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="PkTbunAqFMuEDqFepPEY-1" value="">
