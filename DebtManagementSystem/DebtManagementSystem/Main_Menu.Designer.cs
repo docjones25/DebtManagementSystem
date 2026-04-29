@@ -45,6 +45,7 @@
             this.customerBtn.TabIndex = 1;
             this.customerBtn.Text = "Customer";
             this.customerBtn.UseVisualStyleBackColor = true;
+            this.customerBtn.Click += new System.EventHandler(this.customerBtn_Click);
             // 
             // flappyJudsBtn
             // 
@@ -54,6 +55,7 @@
             this.flappyJudsBtn.TabIndex = 3;
             this.flappyJudsBtn.Text = "Flappy Juds";
             this.flappyJudsBtn.UseVisualStyleBackColor = true;
+            this.flappyJudsBtn.Click += new System.EventHandler(this.flappyJudsBtn_Click);
             // 
             // productsBtn
             // 
@@ -63,6 +65,7 @@
             this.productsBtn.TabIndex = 2;
             this.productsBtn.Text = "Products";
             this.productsBtn.UseVisualStyleBackColor = true;
+            this.productsBtn.Click += new System.EventHandler(this.productsBtn_Click);
             // 
             // exitBtn
             // 
@@ -91,6 +94,7 @@
             this.transactionBtn.TabIndex = 6;
             this.transactionBtn.Text = "Transaction";
             this.transactionBtn.UseVisualStyleBackColor = true;
+            this.transactionBtn.Click += new System.EventHandler(this.transactionBtn_Click);
             // 
             // dashboardBtn
             // 
@@ -100,6 +104,7 @@
             this.dashboardBtn.TabIndex = 7;
             this.dashboardBtn.Text = "Dashboard";
             this.dashboardBtn.UseVisualStyleBackColor = true;
+            this.dashboardBtn.Click += new System.EventHandler(this.dashboardBtn_Click);
             // 
             // Main_Menu
             // 

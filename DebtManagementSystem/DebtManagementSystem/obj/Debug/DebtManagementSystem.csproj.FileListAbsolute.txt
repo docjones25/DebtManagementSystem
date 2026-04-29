@@ -19,3 +19,4 @@ C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManage
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.csproj.CoreCompileInputs.cache
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.exe
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.pdb
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.AddProduct.resources
