@@ -17,6 +17,11 @@ namespace DebtManagementSystem
             InitializeComponent();
         }
 
-
+        private void productsBtn_Click(object sender, EventArgs e)
+        {
+            Product product = new Product();
+            product.Show();
+            this.Hide();
+        }
     }
 }

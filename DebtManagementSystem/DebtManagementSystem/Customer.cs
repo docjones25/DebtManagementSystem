@@ -16,5 +16,10 @@ namespace DebtManagementSystem
         {
             InitializeComponent();
         }
+
+        private void Customer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

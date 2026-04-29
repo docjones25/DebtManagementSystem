@@ -16,5 +16,10 @@ namespace DebtManagementSystem
         {
             InitializeComponent();
         }
+
+        private void searchBar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

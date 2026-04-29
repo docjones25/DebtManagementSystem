@@ -39,36 +39,41 @@
             // 
             // customerBtn
             // 
-            this.customerBtn.Location = new System.Drawing.Point(366, 262);
+            this.customerBtn.Location = new System.Drawing.Point(274, 213);
+            this.customerBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.customerBtn.Name = "customerBtn";
-            this.customerBtn.Size = new System.Drawing.Size(184, 48);
+            this.customerBtn.Size = new System.Drawing.Size(138, 39);
             this.customerBtn.TabIndex = 1;
             this.customerBtn.Text = "Customer";
             this.customerBtn.UseVisualStyleBackColor = true;
             // 
             // flappyJudsBtn
             // 
-            this.flappyJudsBtn.Location = new System.Drawing.Point(366, 424);
+            this.flappyJudsBtn.Location = new System.Drawing.Point(274, 344);
+            this.flappyJudsBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flappyJudsBtn.Name = "flappyJudsBtn";
-            this.flappyJudsBtn.Size = new System.Drawing.Size(184, 48);
+            this.flappyJudsBtn.Size = new System.Drawing.Size(138, 39);
             this.flappyJudsBtn.TabIndex = 3;
             this.flappyJudsBtn.Text = "Flappy Juds";
             this.flappyJudsBtn.UseVisualStyleBackColor = true;
             // 
             // productsBtn
             // 
-            this.productsBtn.Location = new System.Drawing.Point(366, 316);
+            this.productsBtn.Location = new System.Drawing.Point(274, 257);
+            this.productsBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productsBtn.Name = "productsBtn";
-            this.productsBtn.Size = new System.Drawing.Size(184, 48);
+            this.productsBtn.Size = new System.Drawing.Size(138, 39);
             this.productsBtn.TabIndex = 2;
             this.productsBtn.Text = "Products";
             this.productsBtn.UseVisualStyleBackColor = true;
+            this.productsBtn.Click += new System.EventHandler(this.productsBtn_Click);
             // 
             // exitBtn
             // 
-            this.exitBtn.Location = new System.Drawing.Point(366, 478);
+            this.exitBtn.Location = new System.Drawing.Point(274, 388);
+            this.exitBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(184, 48);
+            this.exitBtn.Size = new System.Drawing.Size(138, 39);
             this.exitBtn.TabIndex = 4;
             this.exitBtn.Text = "Exit";
             this.exitBtn.UseVisualStyleBackColor = true;
@@ -77,35 +82,38 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(207, 130);
+            this.label1.Location = new System.Drawing.Point(155, 106);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(512, 39);
+            this.label1.Size = new System.Drawing.Size(406, 31);
             this.label1.TabIndex = 5;
             this.label1.Text = "DEBT MANAGEMENT SYSTEM";
             // 
             // transactionBtn
             // 
-            this.transactionBtn.Location = new System.Drawing.Point(366, 370);
+            this.transactionBtn.Location = new System.Drawing.Point(274, 301);
+            this.transactionBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.transactionBtn.Name = "transactionBtn";
-            this.transactionBtn.Size = new System.Drawing.Size(184, 48);
+            this.transactionBtn.Size = new System.Drawing.Size(138, 39);
             this.transactionBtn.TabIndex = 6;
             this.transactionBtn.Text = "Transaction";
             this.transactionBtn.UseVisualStyleBackColor = true;
             // 
             // dashboardBtn
             // 
-            this.dashboardBtn.Location = new System.Drawing.Point(366, 208);
+            this.dashboardBtn.Location = new System.Drawing.Point(274, 169);
+            this.dashboardBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dashboardBtn.Name = "dashboardBtn";
-            this.dashboardBtn.Size = new System.Drawing.Size(184, 48);
+            this.dashboardBtn.Size = new System.Drawing.Size(138, 39);
             this.dashboardBtn.TabIndex = 7;
             this.dashboardBtn.Text = "Dashboard";
             this.dashboardBtn.UseVisualStyleBackColor = true;
             // 
             // Main_Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(953, 648);
+            this.ClientSize = new System.Drawing.Size(715, 526);
             this.Controls.Add(this.dashboardBtn);
             this.Controls.Add(this.transactionBtn);
             this.Controls.Add(this.label1);
@@ -113,6 +121,7 @@
             this.Controls.Add(this.flappyJudsBtn);
             this.Controls.Add(this.productsBtn);
             this.Controls.Add(this.customerBtn);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Main_Menu";
             this.Text = "Form1";
             this.ResumeLayout(false);
