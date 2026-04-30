@@ -69,7 +69,6 @@
             this.searchBar.Name = "searchBar";
             this.searchBar.Size = new System.Drawing.Size(460, 30);
             this.searchBar.TabIndex = 11;
-            this.searchBar.TextChanged += new System.EventHandler(this.searchBar_TextChanged);
             // 
             // button1
             // 
