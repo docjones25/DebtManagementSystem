@@ -29,22 +29,24 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.productImg = new System.Windows.Forms.PictureBox();
+            this.addBtn = new System.Windows.Forms.Button();
+            this.clearBtn = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtPrice = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.categoryList = new System.Windows.Forms.ComboBox();
             this.txtProductName = new System.Windows.Forms.TextBox();
             this.uploadImgBtn = new System.Windows.Forms.Button();
-            this.categoryList = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtPrice = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.clearBtn = new System.Windows.Forms.Button();
+            this.productImg = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.productImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productImg)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.addBtn);
             this.panel1.Controls.Add(this.clearBtn);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtPrice);
@@ -59,14 +61,81 @@
             this.panel1.Size = new System.Drawing.Size(776, 264);
             this.panel1.TabIndex = 0;
             // 
-            // productImg
+            // addBtn
             // 
-            this.productImg.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.productImg.Location = new System.Drawing.Point(25, 24);
-            this.productImg.Name = "productImg";
-            this.productImg.Size = new System.Drawing.Size(150, 150);
-            this.productImg.TabIndex = 0;
-            this.productImg.TabStop = false;
+            this.addBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.addBtn.Location = new System.Drawing.Point(577, 189);
+            this.addBtn.Name = "addBtn";
+            this.addBtn.Size = new System.Drawing.Size(140, 42);
+            this.addBtn.TabIndex = 10;
+            this.addBtn.Text = "Add";
+            this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
+            // 
+            // clearBtn
+            // 
+            this.clearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.clearBtn.Location = new System.Drawing.Point(577, 124);
+            this.clearBtn.Name = "clearBtn";
+            this.clearBtn.Size = new System.Drawing.Size(140, 39);
+            this.clearBtn.TabIndex = 9;
+            this.clearBtn.Text = "Clear ";
+            this.clearBtn.UseVisualStyleBackColor = true;
+            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label3.Location = new System.Drawing.Point(367, 97);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 25);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Category *";
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.AllowDrop = true;
+            this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.txtPrice.Location = new System.Drawing.Point(209, 125);
+            this.txtPrice.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(133, 38);
+            this.txtPrice.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label2.Location = new System.Drawing.Point(209, 97);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 25);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Price *";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.Location = new System.Drawing.Point(208, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 25);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Product name *";
+            // 
+            // categoryList
+            // 
+            this.categoryList.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.categoryList.FormattingEnabled = true;
+            this.categoryList.Location = new System.Drawing.Point(363, 124);
+            this.categoryList.Name = "categoryList";
+            this.categoryList.Size = new System.Drawing.Size(192, 39);
+            this.categoryList.TabIndex = 4;
+            this.categoryList.SelectedIndexChanged += new System.EventHandler(this.categoryList_SelectedIndexChanged);
             // 
             // txtProductName
             // 
@@ -87,70 +156,16 @@
             this.uploadImgBtn.TabIndex = 1;
             this.uploadImgBtn.Text = "Upload Image";
             this.uploadImgBtn.UseVisualStyleBackColor = true;
+            this.uploadImgBtn.Click += new System.EventHandler(this.uploadImgBtn_Click);
             // 
-            // categoryList
+            // productImg
             // 
-            this.categoryList.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.categoryList.FormattingEnabled = true;
-            this.categoryList.Location = new System.Drawing.Point(363, 124);
-            this.categoryList.Name = "categoryList";
-            this.categoryList.Size = new System.Drawing.Size(192, 39);
-            this.categoryList.TabIndex = 4;
-            this.categoryList.SelectedIndexChanged += new System.EventHandler(this.categoryList_SelectedIndexChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(208, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 25);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Product name *";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(209, 97);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 25);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Price *";
-            // 
-            // txtPrice
-            // 
-            this.txtPrice.AllowDrop = true;
-            this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.txtPrice.Location = new System.Drawing.Point(209, 125);
-            this.txtPrice.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(133, 38);
-            this.txtPrice.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(367, 97);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 25);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Category *";
-            // 
-            // clearBtn
-            // 
-            this.clearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.clearBtn.Location = new System.Drawing.Point(577, 124);
-            this.clearBtn.Name = "clearBtn";
-            this.clearBtn.Size = new System.Drawing.Size(129, 39);
-            this.clearBtn.TabIndex = 9;
-            this.clearBtn.Text = "Clear ";
-            this.clearBtn.UseVisualStyleBackColor = true;
+            this.productImg.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.productImg.Location = new System.Drawing.Point(25, 24);
+            this.productImg.Name = "productImg";
+            this.productImg.Size = new System.Drawing.Size(150, 150);
+            this.productImg.TabIndex = 0;
+            this.productImg.TabStop = false;
             // 
             // AddProduct
             // 
@@ -162,8 +177,8 @@
             this.Text = "AddProduct";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.productImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productImg)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -180,5 +195,6 @@
         private System.Windows.Forms.ComboBox categoryList;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button clearBtn;
+        private System.Windows.Forms.Button addBtn;
     }
 }
