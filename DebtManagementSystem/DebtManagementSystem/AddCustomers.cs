@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace DebtManagementSystem
 {
-    public partial class AddProduct : Form
+    public partial class AddCustomers : Form
     {
-        public AddProduct()
+        public AddCustomers()
         {
             InitializeComponent();
-        }
-
-        private void categoryList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uploadImgBtn_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

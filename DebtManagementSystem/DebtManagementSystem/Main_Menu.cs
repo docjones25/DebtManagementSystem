@@ -17,6 +17,7 @@ namespace DebtManagementSystem
             InitializeComponent();
         }
 
+
         private void dashboardBtn_Click(object sender, EventArgs e)
         {
             Dashboard dashboard = new Dashboard();

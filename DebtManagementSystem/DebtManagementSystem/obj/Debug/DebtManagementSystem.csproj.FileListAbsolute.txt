@@ -20,3 +20,16 @@ C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManage
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.exe
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.pdb
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.AddProduct.resources
+C:\Users\SHARMAINE\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.csproj.AssemblyReference.cache
+C:\Users\SHARMAINE\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.AddProduct.resources
+C:\Users\SHARMAINE\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.Customer.resources
+C:\Users\SHARMAINE\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.Main_Menu.resources
+C:\Users\SHARMAINE\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.Product.resources
+C:\Users\SHARMAINE\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.Properties.Resources.resources
+C:\Users\SHARMAINE\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.csproj.GenerateResource.cache
+C:\Users\SHARMAINE\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\SHARMAINE\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.exe
+C:\Users\SHARMAINE\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.pdb
+C:\Users\SHARMAINE\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\bin\Debug\DebtManagementSystem.exe.config
+C:\Users\SHARMAINE\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\bin\Debug\DebtManagementSystem.exe
+C:\Users\SHARMAINE\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\bin\Debug\DebtManagementSystem.pdb
