@@ -1,0 +1,88 @@
+09/05/2026 10:03:00 pm	This log contains information about the import schema operation into project 'DebtManagementSystemDB' on computer 'LAPTOP-C9C4RRSI' by user 'Jonas'.
+09/05/2026 10:03:00 pm	Import of database schema has started.
+09/05/2026 10:03:07 pm	Gathering database credentials
+09/05/2026 10:03:07 pm	Gathering database options
+09/05/2026 10:03:07 pm	Gathering generic database scoped configuration option
+09/05/2026 10:03:07 pm	Gathering users
+09/05/2026 10:03:07 pm	Gathering roles
+09/05/2026 10:03:07 pm	Gathering application roles
+09/05/2026 10:03:07 pm	Gathering role memberships
+09/05/2026 10:03:07 pm	Gathering filegroups
+09/05/2026 10:03:07 pm	Gathering full-text catalogs
+09/05/2026 10:03:07 pm	Gathering assemblies
+09/05/2026 10:03:07 pm	Gathering certificates
+09/05/2026 10:03:07 pm	Gathering asymmetric keys
+09/05/2026 10:03:07 pm	Gathering symmetric keys
+09/05/2026 10:03:07 pm	Gathering encrypted symmetric keys
+09/05/2026 10:03:07 pm	Gathering schemas
+09/05/2026 10:03:07 pm	Gathering XML schema collections
+09/05/2026 10:03:07 pm	Gathering user-defined data types
+09/05/2026 10:03:07 pm	Gathering user-defined types
+09/05/2026 10:03:07 pm	Gathering table types
+09/05/2026 10:03:07 pm	Gathering unique keys for table types
+09/05/2026 10:03:07 pm	Gathering primary keys for table types
+09/05/2026 10:03:07 pm	Gathering indexes for table types
+09/05/2026 10:03:07 pm	Gathering check constraints for table types
+09/05/2026 10:03:07 pm	Gathering default constraints for table types
+09/05/2026 10:03:07 pm	Gathering partition functions
+09/05/2026 10:03:07 pm	Gathering partition schemes
+09/05/2026 10:03:07 pm	Gathering functions
+09/05/2026 10:03:07 pm	Gathering encrypted functions
+09/05/2026 10:03:07 pm	Gathering aggregates
+09/05/2026 10:03:07 pm	Gathering procedures
+09/05/2026 10:03:07 pm	Gathering encrypted procedures
+09/05/2026 10:03:07 pm	Gathering tables
+09/05/2026 10:03:08 pm	Gathering primary keys
+09/05/2026 10:03:08 pm	Gathering unique constraints
+09/05/2026 10:03:08 pm	Gathering foreign keys
+09/05/2026 10:03:08 pm	Gathering default constraints
+09/05/2026 10:03:08 pm	Gathering check constraints
+09/05/2026 10:03:08 pm	Gathering views
+09/05/2026 10:03:08 pm	Gathering encrypted views
+09/05/2026 10:03:08 pm	Gathering indexes
+09/05/2026 10:03:08 pm	Gathering statistics
+09/05/2026 10:03:08 pm	Gathering full-text index stoplists
+09/05/2026 10:03:08 pm	Gathering search property lists
+09/05/2026 10:03:08 pm	Gathering search properties
+09/05/2026 10:03:08 pm	Gathering full-text indexes
+09/05/2026 10:03:08 pm	Gathering column store indexes
+09/05/2026 10:03:08 pm	Gathering spatial indexes
+09/05/2026 10:03:08 pm	Gathering XML indexes
+09/05/2026 10:03:08 pm	Gathering Selective XML indexes
+09/05/2026 10:03:08 pm	Gathering encrypted triggers
+09/05/2026 10:03:08 pm	Gathering triggers
+09/05/2026 10:03:08 pm	Gathering encrypted and clr ddl triggers
+09/05/2026 10:03:08 pm	Gathering ddl triggers
+09/05/2026 10:03:08 pm	Creating edge constraints
+09/05/2026 10:03:08 pm	Gathering synonyms
+09/05/2026 10:03:08 pm	Gathering defaults
+09/05/2026 10:03:08 pm	Gathering data constraint uddt bindings
+09/05/2026 10:03:08 pm	Gathering rules
+09/05/2026 10:03:08 pm	Gathering data constraint uddt bindings
+09/05/2026 10:03:08 pm	Gathering message types
+09/05/2026 10:03:08 pm	Gathering queues
+09/05/2026 10:03:08 pm	Gathering contracts
+09/05/2026 10:03:08 pm	Gathering services
+09/05/2026 10:03:08 pm	Gathering event notifications
+09/05/2026 10:03:08 pm	Gathering remote service bindings
+09/05/2026 10:03:08 pm	Gathering broker priorities
+09/05/2026 10:03:08 pm	Gathering signatures
+09/05/2026 10:03:08 pm	Gathering compression options
+09/05/2026 10:03:08 pm	Gathering sequence types
+09/05/2026 10:03:08 pm	Gathering security policies
+09/05/2026 10:03:08 pm	Gather column encryption keys
+09/05/2026 10:03:08 pm	Gathering column master keys
+09/05/2026 10:03:08 pm	Gathering external data sources
+09/05/2026 10:03:08 pm	Gathering external file formats
+09/05/2026 10:03:08 pm	Gathering external tables
+09/05/2026 10:03:08 pm	Gathering XML index compression options
+09/05/2026 10:03:08 pm	Gathering extended properties
+09/05/2026 10:03:08 pm	Gathering assemblies
+09/05/2026 10:03:08 pm	Gathering credentials
+09/05/2026 10:03:08 pm	Gathering logins
+09/05/2026 10:03:08 pm	Gathering server audits
+09/05/2026 10:03:09 pm	Scanning project for duplicate elements
+09/05/2026 10:03:09 pm	Finished duplicate element processing
+09/05/2026 10:03:09 pm	Finished importing database.
+09/05/2026 10:03:09 pm	A summary of the import was saved to the following location: C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystemDB\Import Schema Logs\DebtManagementSystem_20260509020300.log
+09/05/2026 10:03:09 pm	Click Finish to continue...

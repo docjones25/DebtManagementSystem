@@ -58,7 +58,7 @@
             this.panel1.Controls.Add(this.productImg);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 264);
+            this.panel1.Size = new System.Drawing.Size(744, 256);
             this.panel1.TabIndex = 0;
             // 
             // addBtn
@@ -135,7 +135,6 @@
             this.categoryList.Name = "categoryList";
             this.categoryList.Size = new System.Drawing.Size(192, 39);
             this.categoryList.TabIndex = 4;
-            this.categoryList.SelectedIndexChanged += new System.EventHandler(this.categoryList_SelectedIndexChanged);
             // 
             // txtProductName
             // 
@@ -166,12 +165,13 @@
             this.productImg.Size = new System.Drawing.Size(150, 150);
             this.productImg.TabIndex = 0;
             this.productImg.TabStop = false;
+            this.productImg.Click += new System.EventHandler(this.productImg_Click);
             // 
             // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(768, 280);
             this.Controls.Add(this.panel1);
             this.Name = "AddProduct";
             this.Text = "AddProduct";

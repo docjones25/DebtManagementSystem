@@ -20,3 +20,8 @@ C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManage
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.exe
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.pdb
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.AddProduct.resources
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.CustomersControl.resources
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.DashboardControl.resources
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.PaymentsControl.resources
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.ProductsControl.resources
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.ProductCard.resources

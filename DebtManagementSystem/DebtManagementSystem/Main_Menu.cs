@@ -15,39 +15,46 @@ namespace DebtManagementSystem
         public Main_Menu()
         {
             InitializeComponent();
+
         }
 
-        private void dashboardBtn_Click(object sender, EventArgs e)
-        {
-            Dashboard dashboard = new Dashboard();
-            this.Hide();
-            dashboard.Show();
-        }
-
-        private void customerBtn_Click(object sender, EventArgs e)
-        {
-            Customer customer = new Customer();
-            this.Hide();
-            customer.Show();
-        }
-
-        private void productsBtn_Click(object sender, EventArgs e)
-        {
-            Product product = new Product();
-            this.Hide();
-            product.Show();
-        }
-
-        private void transactionBtn_Click(object sender, EventArgs e)
-        {
-            Transaction transaction = new Transaction();
-            this.Hide();
-            transaction.Show();
-        }
-
-        private void flappyJudsBtn_Click(object sender, EventArgs e)
+        private void dashboardBtn_Click_1(object sender, EventArgs e)
         {
 
         }
+        private void LoadControl(UserControl control)
+        {
+            mainPanel.Controls.Clear();
+
+            control.Dock = DockStyle.Fill;
+
+            mainPanel.Controls.Add(control);
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            LoadControl(new DashboardControl());
+        }
+
+        private void btnCustomers_Click(object sender, EventArgs e)
+        {
+            LoadControl(new CustomersControl());
+        }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            LoadControl(new ProductsControl());
+        }
+
+        private void btnTransactions_Click(object sender, EventArgs e)
+        {
+            LoadControl(new TransactionsControl());
+        }
+
+        private void btnPaymens_Click(object sender, EventArgs e)
+        {
+            LoadControl(new PaymentsControl());
+        }
+
     }
 }

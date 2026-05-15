@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -14,16 +15,14 @@ namespace DebtManagementSystem
 {
     public partial class AddProduct : Form
     {
-        public AddProduct()
+        private ProductsControl productsControl;
+        public AddProduct(ProductsControl control)
         {
             InitializeComponent();
+            productsControl = control;
         }
 
-        private void categoryList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        private string imagePath = "";
         private void uploadImgBtn_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog ofd = new OpenFileDialog())
@@ -42,6 +41,7 @@ namespace DebtManagementSystem
                     File.Copy(ofd.FileName, destPath, true);
 
                     productImg.Image = Image.FromFile(destPath);
+                    imagePath = destPath;
                     productImg.SizeMode = PictureBoxSizeMode.Zoom;
 
                 }
@@ -58,7 +58,16 @@ namespace DebtManagementSystem
 
         private void addBtn_Click(object sender, EventArgs e)
         {
-            DebtManagementSystemAdapter adapter = new DebtManagementSystemAdapter();
+            DebtDataSetTableAdapters.ProductsTableAdapter productsAdapter = new DebtDataSetTableAdapters.ProductsTableAdapter();
+            productsAdapter.Insert(txtProductName.Text, txtPrice.Value, (int)categoryList.SelectedValue, imagePath);
+            productsControl.LoadProducts();
+            MessageBox.Show("Product added successfully!");
+            this.Close();
+        }
+
+        private void productImg_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
