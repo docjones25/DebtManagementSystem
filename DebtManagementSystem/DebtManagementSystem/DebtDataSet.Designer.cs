@@ -3499,7 +3499,7 @@ SELECT ProductID, ProductName, CategoryID, Price, ImagePath FROM Products WHERE 
             this._commandCollection[1].Connection = this.Connection;
             this._commandCollection[1].CommandText = "SELECT\r\n    Products.ProductID,\r\n    Products.ProductName,\r\n    Products.Price,\r\n" +
                 "    Products.ImagePath,\r\n    Categories.CategoryName\r\nFROM Products\r\nINNER JOIN " +
-                "Categories\r\n    ON Products.CategoryID = Categories.CategoryID";
+                "Categories\r\nON Products.CategoryID = Categories.CategoryID";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -3531,7 +3531,7 @@ SELECT ProductID, ProductName, CategoryID, Price, ImagePath FROM Products WHERE 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillBy(DebtDataSet.ProductsDataTable dataTable) {
+        public virtual int FillProductsWithCategory(DebtDataSet.ProductsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3544,7 +3544,7 @@ SELECT ProductID, ProductName, CategoryID, Price, ImagePath FROM Products WHERE 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DebtDataSet.ProductsDataTable GetDataBy() {
+        public virtual DebtDataSet.ProductsDataTable GetProductsWithCategory() {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             DebtDataSet.ProductsDataTable dataTable = new DebtDataSet.ProductsDataTable();
             this.Adapter.Fill(dataTable);

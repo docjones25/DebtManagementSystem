@@ -3,12 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace DebtManagementSystem
 {
@@ -25,32 +26,47 @@ namespace DebtManagementSystem
             addProductForm.ShowDialog();
         }
 
-        
-
         public void LoadProducts()
         {
             flowProducts.Controls.Clear();
-            ProductsTableAdapter adapter = new ProductsTableAdapter();
-            DebtDataSet.ProductsDataTable dt = new DebtDataSet.ProductsDataTable();
-            adapter.Fill(dt);
-            foreach (DebtDataSet.ProductsRow row in dt.Rows)
+
+            string connectionString =
+                @"Data Source=.\SQLEXPRESS;
+                Initial Catalog=DebtManagementSystemDB;
+                Integrated Security=True";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                ProductCard card = new ProductCard();
+                conn.Open();
+                string query = @"
+                SELECT
+                    Products.ProductName,
+                    Products.Price,
+                    Products.ImagePath,
+                    Categories.CategoryName
+                FROM Products
+                INNER JOIN Categories
+                ON Products.CategoryID = Categories.CategoryID";
 
-                card.ProductName = row.ProductName;
-                card.ProductPrice =
-                    "₱" + row.Price.ToString();
-
-                if (!row.IsImagePathNull())
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    if (File.Exists(row.ImagePath))
+                    while (reader.Read())
                     {
-                        card.ProductImage =
-                            Image.FromFile(row.ImagePath);
+                        ProductCard card = new ProductCard();
+                        card.ProductName = reader["ProductName"].ToString();
+                        card.ProductPrice = "₱" + reader["Price"].ToString();
+                        card.ProductCategory = reader["CategoryName"].ToString();
+                        string imagePath = reader["ImagePath"].ToString();
+                        if (File.Exists(imagePath))
+                        {
+                            card.ProductImage =
+                                Image.FromFile(imagePath);
+                        }
+
+                        flowProducts.Controls.Add(card);
                     }
                 }
-
-                flowProducts.Controls.Add(card);
             }
         }
 
