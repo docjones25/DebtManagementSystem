@@ -23,6 +23,12 @@ namespace DebtManagementSystem
             set => lblName.Text = value;
         }
 
+        public string ProductCategory
+        {
+            get => lblCategory.Text;
+            set => lblCategory.Text = value;
+        }
+
         public string ProductPrice
         {
             get => lblPrice.Text;

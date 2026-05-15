@@ -42,7 +42,6 @@ namespace DebtManagementSystem
             this.headerPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.sideBarPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.headerPanel.SuspendLayout();
@@ -154,12 +153,6 @@ namespace DebtManagementSystem
             this.mainPanel.Size = new System.Drawing.Size(932, 649);
             this.mainPanel.TabIndex = 1;
             // 
-            // directorySearcher1
-            // 
-            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            // 
             // Main_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -189,7 +182,6 @@ namespace DebtManagementSystem
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Button btnCustomers;
         private System.Windows.Forms.Button btnDashboard;
-        private System.DirectoryServices.DirectorySearcher directorySearcher1;
     }
 }
 

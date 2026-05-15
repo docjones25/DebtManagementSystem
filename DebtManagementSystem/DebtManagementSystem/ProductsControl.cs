@@ -25,24 +25,19 @@ namespace DebtManagementSystem
             addProductForm.ShowDialog();
         }
 
+        
+
         public void LoadProducts()
         {
             flowProducts.Controls.Clear();
-
-            ProductsTableAdapter adapter =
-                new ProductsTableAdapter();
-
-            DebtDataSet.ProductsDataTable dt =
-                new DebtDataSet.ProductsDataTable();
-
+            ProductsTableAdapter adapter = new ProductsTableAdapter();
+            DebtDataSet.ProductsDataTable dt = new DebtDataSet.ProductsDataTable();
             adapter.Fill(dt);
-
             foreach (DebtDataSet.ProductsRow row in dt.Rows)
             {
                 ProductCard card = new ProductCard();
 
                 card.ProductName = row.ProductName;
-
                 card.ProductPrice =
                     "₱" + row.Price.ToString();
 

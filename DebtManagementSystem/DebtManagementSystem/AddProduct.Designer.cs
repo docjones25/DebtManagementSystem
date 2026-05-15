@@ -129,12 +129,14 @@
             // 
             // categoryList
             // 
-            this.categoryList.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.categoryList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categoryList.FormattingEnabled = true;
             this.categoryList.Location = new System.Drawing.Point(363, 124);
             this.categoryList.Name = "categoryList";
-            this.categoryList.Size = new System.Drawing.Size(192, 39);
+            this.categoryList.Size = new System.Drawing.Size(192, 33);
             this.categoryList.TabIndex = 4;
+            this.categoryList.Text = "None";
+            this.categoryList.SelectedIndexChanged += new System.EventHandler(this.categoryList_SelectedIndexChanged);
             // 
             // txtProductName
             // 
@@ -165,7 +167,6 @@
             this.productImg.Size = new System.Drawing.Size(150, 150);
             this.productImg.TabIndex = 0;
             this.productImg.TabStop = false;
-            this.productImg.Click += new System.EventHandler(this.productImg_Click);
             // 
             // AddProduct
             // 
@@ -175,6 +176,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "AddProduct";
             this.Text = "AddProduct";
+            this.Load += new System.EventHandler(this.AddProduct_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrice)).EndInit();

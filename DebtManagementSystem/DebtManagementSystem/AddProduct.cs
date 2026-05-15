@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DebtManagementSystem.DebtDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -58,16 +59,35 @@ namespace DebtManagementSystem
 
         private void addBtn_Click(object sender, EventArgs e)
         {
+            if (categoryList.SelectedValue == null)
+            {
+                MessageBox.Show("Please select a category.");
+                return;
+            }
+            int categoryID = (int)categoryList.SelectedValue;
+
             DebtDataSetTableAdapters.ProductsTableAdapter productsAdapter = new DebtDataSetTableAdapters.ProductsTableAdapter();
-            productsAdapter.Insert(txtProductName.Text, txtPrice.Value, (int)categoryList.SelectedValue, imagePath);
+            productsAdapter.Insert(txtProductName.Text, categoryID, txtPrice.Value, imagePath);
             productsControl.LoadProducts();
             MessageBox.Show("Product added successfully!");
             this.Close();
         }
 
-        private void productImg_Click(object sender, EventArgs e)
+
+        private void categoryList_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void AddProduct_Load(object sender, EventArgs e)
+        {
+            CategoriesTableAdapter categoriesAdapter = new CategoriesTableAdapter();
+            DebtDataSet.CategoriesDataTable dt = new DebtDataSet.CategoriesDataTable();
+
+            categoriesAdapter.Fill(dt);
+            categoryList.DataSource = dt;
+            categoryList.DisplayMember = "CategoryName";
+            categoryList.ValueMember = "CategoryID";
         }
     }
 }
