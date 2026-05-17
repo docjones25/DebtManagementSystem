@@ -60,6 +60,7 @@ namespace DebtManagementSystem
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.btnFlappyJuds);
             this.panel1.Controls.Add(this.btnPaymens);
             this.panel1.Controls.Add(this.btnTransactions);
@@ -140,12 +141,12 @@ namespace DebtManagementSystem
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MediumPurple;
             this.label1.Location = new System.Drawing.Point(12, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(233, 138);
+            this.label1.Size = new System.Drawing.Size(268, 157);
             this.label1.TabIndex = 0;
             this.label1.Text = "Debt Management System";
             // 
