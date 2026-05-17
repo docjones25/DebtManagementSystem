@@ -63,13 +63,14 @@
             // 
             // addBtn
             // 
+            this.addBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.addBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.addBtn.Location = new System.Drawing.Point(577, 189);
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(140, 42);
             this.addBtn.TabIndex = 10;
             this.addBtn.Text = "Add";
-            this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.UseVisualStyleBackColor = false;
             this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
             // clearBtn

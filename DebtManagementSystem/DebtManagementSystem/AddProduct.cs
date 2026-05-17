@@ -5,12 +5,14 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 namespace DebtManagementSystem
 {
@@ -21,6 +23,9 @@ namespace DebtManagementSystem
         {
             InitializeComponent();
             productsControl = control;
+
+            ApplyRoundness(clearBtn, 25);
+            ApplyRoundness(addBtn, 25);
         }
 
         private string imagePath = "";
@@ -89,5 +94,49 @@ namespace DebtManagementSystem
             categoryList.DisplayMember = "CategoryName";
             categoryList.ValueMember = "CategoryID";
         }
+        private GraphicsPath ApplyDesign(RectangleF rect, int radius)
+        {
+            GraphicsPath path = new GraphicsPath();
+            path.StartFigure();
+            path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
+            path.AddArc(rect.Width - radius, rect.Y, radius, radius, 270, 90);
+            path.AddArc(rect.Width - radius, rect.Height - radius, radius, radius, 0, 90);
+            path.AddArc(rect.X, rect.Height - radius, radius, radius, 90, 90);
+            path.CloseFigure();
+            return path;
+        }
+        private void ApplyRoundness(Button btn, int radius)
+        {
+            btn.Resize += (s, e) => btn.Invalidate(); // force redraw on resize
+
+            btn.Paint += (s, e) =>
+            {
+                e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+                e.Graphics.Clear(btn.Parent.BackColor); // clears background properly
+
+                Rectangle rect = new Rectangle(1, 1, btn.Width - 3, btn.Height - 3);
+                GraphicsPath path = ApplyDesign(rect, radius);
+
+                using (Pen borderPen = new Pen(ColorTranslator.FromHtml("#8878c3"), 2))
+                {
+                    e.Graphics.DrawPath(borderPen, path);
+                }
+
+                TextRenderer.DrawText(
+                    e.Graphics,
+                    btn.Text,
+                    btn.Font,
+                    btn.ClientRectangle,
+                    btn.ForeColor,
+                    TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter
+                );
+            };
+
+            btn.FlatStyle = FlatStyle.Flat;
+            btn.FlatAppearance.BorderSize = 0;
+            btn.BackColor = Color.Transparent;
+        }
+
+
     }
 }

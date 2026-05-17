@@ -60,7 +60,7 @@ namespace DebtManagementSystem
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel1.Controls.Add(this.btnFlappyJuds);
             this.panel1.Controls.Add(this.btnPaymens);
             this.panel1.Controls.Add(this.btnTransactions);
@@ -69,12 +69,12 @@ namespace DebtManagementSystem
             this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Location = new System.Drawing.Point(3, 209);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(294, 342);
+            this.panel1.Size = new System.Drawing.Size(294, 366);
             this.panel1.TabIndex = 7;
             // 
             // btnFlappyJuds
             // 
-            this.btnFlappyJuds.Location = new System.Drawing.Point(3, 285);
+            this.btnFlappyJuds.Location = new System.Drawing.Point(3, 300);
             this.btnFlappyJuds.Name = "btnFlappyJuds";
             this.btnFlappyJuds.Size = new System.Drawing.Size(288, 50);
             this.btnFlappyJuds.TabIndex = 11;
@@ -83,7 +83,7 @@ namespace DebtManagementSystem
             // 
             // btnPaymens
             // 
-            this.btnPaymens.Location = new System.Drawing.Point(3, 229);
+            this.btnPaymens.Location = new System.Drawing.Point(3, 244);
             this.btnPaymens.Name = "btnPaymens";
             this.btnPaymens.Size = new System.Drawing.Size(288, 50);
             this.btnPaymens.TabIndex = 10;
@@ -93,7 +93,7 @@ namespace DebtManagementSystem
             // 
             // btnTransactions
             // 
-            this.btnTransactions.Location = new System.Drawing.Point(3, 173);
+            this.btnTransactions.Location = new System.Drawing.Point(3, 188);
             this.btnTransactions.Name = "btnTransactions";
             this.btnTransactions.Size = new System.Drawing.Size(288, 50);
             this.btnTransactions.TabIndex = 9;
@@ -103,7 +103,7 @@ namespace DebtManagementSystem
             // 
             // btnProducts
             // 
-            this.btnProducts.Location = new System.Drawing.Point(3, 117);
+            this.btnProducts.Location = new System.Drawing.Point(3, 132);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.Size = new System.Drawing.Size(288, 50);
             this.btnProducts.TabIndex = 8;
@@ -113,7 +113,7 @@ namespace DebtManagementSystem
             // 
             // btnCustomers
             // 
-            this.btnCustomers.Location = new System.Drawing.Point(3, 61);
+            this.btnCustomers.Location = new System.Drawing.Point(3, 76);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.Size = new System.Drawing.Size(288, 50);
             this.btnCustomers.TabIndex = 7;
@@ -123,7 +123,7 @@ namespace DebtManagementSystem
             // 
             // btnDashboard
             // 
-            this.btnDashboard.Location = new System.Drawing.Point(3, 5);
+            this.btnDashboard.Location = new System.Drawing.Point(3, 20);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(288, 50);
             this.btnDashboard.TabIndex = 6;
@@ -141,8 +141,8 @@ namespace DebtManagementSystem
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Plum;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.MediumPurple;
             this.label1.Location = new System.Drawing.Point(12, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
