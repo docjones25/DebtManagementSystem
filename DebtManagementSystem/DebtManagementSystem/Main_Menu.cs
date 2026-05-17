@@ -18,16 +18,10 @@ namespace DebtManagementSystem
 
         }
 
-        private void dashboardBtn_Click_1(object sender, EventArgs e)
-        {
-
-        }
-        private void LoadControl(UserControl control)
+        public void LoadControl(UserControl control)
         {
             mainPanel.Controls.Clear();
-
             control.Dock = DockStyle.Fill;
-
             mainPanel.Controls.Add(control);
         }
 

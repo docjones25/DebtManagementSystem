@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +64,12 @@
     </Compile>
     <Compile Include="CustomerCard.Designer.cs">
       <DependentUpon>CustomerCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerDetailsControl.Designer.cs">
+      <DependentUpon>CustomerDetailsControl.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomersControl.cs">
       <SubType>UserControl</SubType>
@@ -102,14 +114,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransactionCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TransactionCard.Designer.cs">
+      <DependentUpon>TransactionCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="TransactionsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="TransactionsControl.Designer.cs">
       <DependentUpon>TransactionsControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddProduct.resx">
       <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerCard.resx">
+      <DependentUpon>CustomerCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDetailsControl.resx">
+      <DependentUpon>CustomerDetailsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomersControl.resx">
       <DependentUpon>CustomersControl.cs</DependentUpon>
@@ -138,6 +165,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TransactionCard.resx">
+      <DependentUpon>TransactionCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TransactionsControl.resx">
       <DependentUpon>TransactionsControl.cs</DependentUpon>
     </EmbeddedResource>
