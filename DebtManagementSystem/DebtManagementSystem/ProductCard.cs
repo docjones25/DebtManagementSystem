@@ -12,11 +12,20 @@ namespace DebtManagementSystem
 {
     public partial class ProductCard : UserControl
     {
-        public ProductCard()
+        private ProductsControl productsControl;
+        private bool isOpening = false;
+        public ProductCard(ProductsControl control)
         {
             InitializeComponent();
+            productsControl = control;  
+            this.Click += ProductCard_Click;
+            lblName.Click += ProductCard_Click;
+            lblPrice.Click += ProductCard_Click;
+            lblCategory.Click += ProductCard_Click;
+            picProduct.Click += ProductCard_Click;
         }
 
+        
         public string ProductName
         {
             get => lblName.Text;
@@ -41,5 +50,16 @@ namespace DebtManagementSystem
             set => picProduct.Image = value;
         }
 
+        public int ProductID { get; set; }
+
+        private void ProductCard_Click(object sender, EventArgs e)
+        {
+
+            if (isOpening) return;
+            isOpening = true;
+            AddProduct editForm = new AddProduct(productsControl, ProductID);
+            editForm.ShowDialog();
+            isOpening = false;
+        }
     }
 }

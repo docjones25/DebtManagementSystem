@@ -53,6 +53,12 @@
     <Compile Include="AddProduct.Designer.cs">
       <DependentUpon>AddProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomerCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerCard.Designer.cs">
+      <DependentUpon>CustomerCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomersControl.cs">
       <SubType>UserControl</SubType>
     </Compile>

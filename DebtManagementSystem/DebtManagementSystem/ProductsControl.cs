@@ -40,31 +40,42 @@ namespace DebtManagementSystem
                 conn.Open();
                 string query = @"
                 SELECT
-                    Products.ProductName,
-                    Products.Price,
-                    Products.ImagePath,
-                    Categories.CategoryName
-                FROM Products
-                INNER JOIN Categories
-                ON Products.CategoryID = Categories.CategoryID";
+                    Products.ProductID,
+                        Products.ProductName,
+                        Products.Price,
+                        Products.ImagePath,
+                        Categories.CategoryName
+                    FROM Products
+                    INNER JOIN Categories
+                    ON Products.CategoryID = Categories.CategoryID
+                    WHERE Products.IsArchived = 0";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        ProductCard card = new ProductCard();
+                        ProductCard card = new ProductCard(this);
                         card.ProductName = reader["ProductName"].ToString();
                         card.ProductPrice = "₱" + reader["Price"].ToString();
                         card.ProductCategory = reader["CategoryName"].ToString();
                         string imagePath = reader["ImagePath"].ToString();
                         if (File.Exists(imagePath))
                         {
-                            card.ProductImage =
-                                Image.FromFile(imagePath);
-                        }
+                            if (File.Exists(imagePath))
+                            {
+                                byte[] bytes = File.ReadAllBytes(imagePath);
 
-                        flowProducts.Controls.Add(card);
+                                using (MemoryStream ms = new MemoryStream(bytes))
+                                {
+                                    Image temp = Image.FromStream(ms);
+
+                                    card.ProductImage = new Bitmap(temp);
+                                }
+                            }
+                        }
+                        card.ProductID = Convert.ToInt32(reader["ProductID"]);
+                        flowProducts.Controls.Add(card); 
                     }
                 }
             }

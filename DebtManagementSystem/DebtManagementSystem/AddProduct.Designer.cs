@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.productPanel = new System.Windows.Forms.Panel();
             this.addBtn = new System.Windows.Forms.Button();
             this.clearBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,27 +39,29 @@
             this.txtProductName = new System.Windows.Forms.TextBox();
             this.uploadImgBtn = new System.Windows.Forms.Button();
             this.productImg = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.productPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productImg)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // productPanel
             // 
-            this.panel1.Controls.Add(this.addBtn);
-            this.panel1.Controls.Add(this.clearBtn);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.txtPrice);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.categoryList);
-            this.panel1.Controls.Add(this.txtProductName);
-            this.panel1.Controls.Add(this.uploadImgBtn);
-            this.panel1.Controls.Add(this.productImg);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(744, 256);
-            this.panel1.TabIndex = 0;
+            this.productPanel.Controls.Add(this.btnCancel);
+            this.productPanel.Controls.Add(this.addBtn);
+            this.productPanel.Controls.Add(this.clearBtn);
+            this.productPanel.Controls.Add(this.label3);
+            this.productPanel.Controls.Add(this.txtPrice);
+            this.productPanel.Controls.Add(this.label2);
+            this.productPanel.Controls.Add(this.label1);
+            this.productPanel.Controls.Add(this.categoryList);
+            this.productPanel.Controls.Add(this.txtProductName);
+            this.productPanel.Controls.Add(this.uploadImgBtn);
+            this.productPanel.Controls.Add(this.productImg);
+            this.productPanel.Location = new System.Drawing.Point(12, 12);
+            this.productPanel.Name = "productPanel";
+            this.productPanel.Size = new System.Drawing.Size(744, 256);
+            this.productPanel.TabIndex = 0;
             // 
             // addBtn
             // 
@@ -136,7 +138,6 @@
             this.categoryList.Size = new System.Drawing.Size(192, 33);
             this.categoryList.TabIndex = 4;
             this.categoryList.Text = "None";
-            this.categoryList.SelectedIndexChanged += new System.EventHandler(this.categoryList_SelectedIndexChanged);
             // 
             // txtProductName
             // 
@@ -165,20 +166,32 @@
             this.productImg.Location = new System.Drawing.Point(25, 24);
             this.productImg.Name = "productImg";
             this.productImg.Size = new System.Drawing.Size(150, 150);
+            this.productImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.productImg.TabIndex = 0;
             this.productImg.TabStop = false;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(412, 189);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(140, 42);
+            this.btnCancel.TabIndex = 11;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(768, 280);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.productPanel);
             this.Name = "AddProduct";
-            this.Text = "AddProduct";
+            this.Text = "Add/Edit Product";
             this.Load += new System.EventHandler(this.AddProduct_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.productPanel.ResumeLayout(false);
+            this.productPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productImg)).EndInit();
             this.ResumeLayout(false);
@@ -187,7 +200,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel productPanel;
         private System.Windows.Forms.TextBox txtProductName;
         private System.Windows.Forms.PictureBox productImg;
         private System.Windows.Forms.Button uploadImgBtn;
@@ -198,5 +211,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button clearBtn;
         private System.Windows.Forms.Button addBtn;
+        private System.Windows.Forms.Button btnCancel;
     }
 }
