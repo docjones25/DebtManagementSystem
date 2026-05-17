@@ -31,6 +31,7 @@ namespace DebtManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Menu));
             this.sideBarPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnFlappyJuds = new System.Windows.Forms.Button();
@@ -38,10 +39,10 @@ namespace DebtManagementSystem
             this.btnTransactions = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.btnCustomers = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.headerPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.btnDashboard = new System.Windows.Forms.Button();
             this.sideBarPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.headerPanel.SuspendLayout();
@@ -49,6 +50,7 @@ namespace DebtManagementSystem
             // 
             // sideBarPanel
             // 
+            this.sideBarPanel.BackColor = System.Drawing.Color.Transparent;
             this.sideBarPanel.Controls.Add(this.panel1);
             this.sideBarPanel.Controls.Add(this.headerPanel);
             this.sideBarPanel.Location = new System.Drawing.Point(12, 12);
@@ -66,12 +68,12 @@ namespace DebtManagementSystem
             this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Location = new System.Drawing.Point(3, 209);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(294, 437);
+            this.panel1.Size = new System.Drawing.Size(294, 354);
             this.panel1.TabIndex = 7;
             // 
             // btnFlappyJuds
             // 
-            this.btnFlappyJuds.Location = new System.Drawing.Point(3, 283);
+            this.btnFlappyJuds.Location = new System.Drawing.Point(3, 293);
             this.btnFlappyJuds.Name = "btnFlappyJuds";
             this.btnFlappyJuds.Size = new System.Drawing.Size(288, 50);
             this.btnFlappyJuds.TabIndex = 11;
@@ -80,7 +82,7 @@ namespace DebtManagementSystem
             // 
             // btnPaymens
             // 
-            this.btnPaymens.Location = new System.Drawing.Point(3, 227);
+            this.btnPaymens.Location = new System.Drawing.Point(3, 237);
             this.btnPaymens.Name = "btnPaymens";
             this.btnPaymens.Size = new System.Drawing.Size(288, 50);
             this.btnPaymens.TabIndex = 10;
@@ -90,7 +92,7 @@ namespace DebtManagementSystem
             // 
             // btnTransactions
             // 
-            this.btnTransactions.Location = new System.Drawing.Point(3, 171);
+            this.btnTransactions.Location = new System.Drawing.Point(3, 181);
             this.btnTransactions.Name = "btnTransactions";
             this.btnTransactions.Size = new System.Drawing.Size(288, 50);
             this.btnTransactions.TabIndex = 9;
@@ -100,7 +102,7 @@ namespace DebtManagementSystem
             // 
             // btnProducts
             // 
-            this.btnProducts.Location = new System.Drawing.Point(3, 115);
+            this.btnProducts.Location = new System.Drawing.Point(3, 125);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.Size = new System.Drawing.Size(288, 50);
             this.btnProducts.TabIndex = 8;
@@ -110,13 +112,23 @@ namespace DebtManagementSystem
             // 
             // btnCustomers
             // 
-            this.btnCustomers.Location = new System.Drawing.Point(3, 59);
+            this.btnCustomers.Location = new System.Drawing.Point(3, 69);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.Size = new System.Drawing.Size(288, 50);
             this.btnCustomers.TabIndex = 7;
             this.btnCustomers.Text = "Customers";
             this.btnCustomers.UseVisualStyleBackColor = true;
             this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.Location = new System.Drawing.Point(3, 13);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(288, 50);
+            this.btnDashboard.TabIndex = 6;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // headerPanel
             // 
@@ -128,7 +140,8 @@ namespace DebtManagementSystem
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.MediumPurple;
             this.label1.Location = new System.Drawing.Point(12, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
@@ -139,25 +152,17 @@ namespace DebtManagementSystem
             // mainPanel
             // 
             this.mainPanel.AutoScroll = true;
+            this.mainPanel.BackColor = System.Drawing.Color.Transparent;
             this.mainPanel.Location = new System.Drawing.Point(318, 12);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(932, 649);
             this.mainPanel.TabIndex = 1;
             // 
-            // btnDashboard
-            // 
-            this.btnDashboard.Location = new System.Drawing.Point(3, 3);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(288, 50);
-            this.btnDashboard.TabIndex = 6;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = true;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
-            // 
             // Main_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.sideBarPanel);
