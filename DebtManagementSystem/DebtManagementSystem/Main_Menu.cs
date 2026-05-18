@@ -15,7 +15,7 @@ namespace DebtManagementSystem
         public Main_Menu()
         {
             InitializeComponent();
-
+            LoadControl(new DashboardControl());
         }
 
         public void LoadControl(UserControl control)
@@ -44,11 +44,5 @@ namespace DebtManagementSystem
         {
             LoadControl(new TransactionsControl());
         }
-
-        private void btnPaymens_Click(object sender, EventArgs e)
-        {
-            LoadControl(new PaymentsControl());
-        }
-
     }
 }

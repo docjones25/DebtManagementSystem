@@ -82,6 +82,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.lblContact);
             this.Controls.Add(this.lblDebt);
             this.Controls.Add(this.lblID);
@@ -89,7 +90,7 @@
             this.Margin = new System.Windows.Forms.Padding(8);
             this.Name = "CustomerCard";
             this.Padding = new System.Windows.Forms.Padding(10);
-            this.Size = new System.Drawing.Size(745, 63);
+            this.Size = new System.Drawing.Size(743, 61);
             this.Load += new System.EventHandler(this.CustomerCard_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

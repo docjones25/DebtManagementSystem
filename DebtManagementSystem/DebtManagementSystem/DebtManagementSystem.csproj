@@ -94,12 +94,6 @@
     <Compile Include="Main_Menu.Designer.cs">
       <DependentUpon>Main_Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="PaymentsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PaymentsControl.Designer.cs">
-      <DependentUpon>PaymentsControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="ProductCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -114,6 +108,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecentTransactionCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecentTransactionCard.Designer.cs">
+      <DependentUpon>RecentTransactionCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopDebtorCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TopDebtorCard.Designer.cs">
+      <DependentUpon>TopDebtorCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="TransactionCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -147,9 +153,6 @@
     <EmbeddedResource Include="Main_Menu.resx">
       <DependentUpon>Main_Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PaymentsControl.resx">
-      <DependentUpon>PaymentsControl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ProductCard.resx">
       <DependentUpon>ProductCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +168,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RecentTransactionCard.resx">
+      <DependentUpon>RecentTransactionCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopDebtorCard.resx">
+      <DependentUpon>TopDebtorCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TransactionCard.resx">
       <DependentUpon>TransactionCard.cs</DependentUpon>
     </EmbeddedResource>

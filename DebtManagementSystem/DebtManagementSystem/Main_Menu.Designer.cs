@@ -34,14 +34,13 @@ namespace DebtManagementSystem
             this.sideBarPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnFlappyJuds = new System.Windows.Forms.Button();
-            this.btnPaymens = new System.Windows.Forms.Button();
             this.btnTransactions = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.btnCustomers = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.headerPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.btnDashboard = new System.Windows.Forms.Button();
             this.sideBarPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.headerPanel.SuspendLayout();
@@ -49,6 +48,7 @@ namespace DebtManagementSystem
             // 
             // sideBarPanel
             // 
+            this.sideBarPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.sideBarPanel.Controls.Add(this.panel1);
             this.sideBarPanel.Controls.Add(this.headerPanel);
             this.sideBarPanel.Location = new System.Drawing.Point(12, 12);
@@ -58,8 +58,8 @@ namespace DebtManagementSystem
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.Controls.Add(this.btnFlappyJuds);
-            this.panel1.Controls.Add(this.btnPaymens);
             this.panel1.Controls.Add(this.btnTransactions);
             this.panel1.Controls.Add(this.btnProducts);
             this.panel1.Controls.Add(this.btnCustomers);
@@ -71,25 +71,17 @@ namespace DebtManagementSystem
             // 
             // btnFlappyJuds
             // 
-            this.btnFlappyJuds.Location = new System.Drawing.Point(3, 283);
+            this.btnFlappyJuds.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnFlappyJuds.Location = new System.Drawing.Point(3, 227);
             this.btnFlappyJuds.Name = "btnFlappyJuds";
             this.btnFlappyJuds.Size = new System.Drawing.Size(288, 50);
             this.btnFlappyJuds.TabIndex = 11;
             this.btnFlappyJuds.Text = "Flappy Juds";
             this.btnFlappyJuds.UseVisualStyleBackColor = true;
             // 
-            // btnPaymens
-            // 
-            this.btnPaymens.Location = new System.Drawing.Point(3, 227);
-            this.btnPaymens.Name = "btnPaymens";
-            this.btnPaymens.Size = new System.Drawing.Size(288, 50);
-            this.btnPaymens.TabIndex = 10;
-            this.btnPaymens.Text = "Payments";
-            this.btnPaymens.UseVisualStyleBackColor = true;
-            this.btnPaymens.Click += new System.EventHandler(this.btnPaymens_Click);
-            // 
             // btnTransactions
             // 
+            this.btnTransactions.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnTransactions.Location = new System.Drawing.Point(3, 171);
             this.btnTransactions.Name = "btnTransactions";
             this.btnTransactions.Size = new System.Drawing.Size(288, 50);
@@ -100,6 +92,7 @@ namespace DebtManagementSystem
             // 
             // btnProducts
             // 
+            this.btnProducts.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnProducts.Location = new System.Drawing.Point(3, 115);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.Size = new System.Drawing.Size(288, 50);
@@ -110,6 +103,7 @@ namespace DebtManagementSystem
             // 
             // btnCustomers
             // 
+            this.btnCustomers.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCustomers.Location = new System.Drawing.Point(3, 59);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.Size = new System.Drawing.Size(288, 50);
@@ -118,8 +112,20 @@ namespace DebtManagementSystem
             this.btnCustomers.UseVisualStyleBackColor = true;
             this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
             // 
+            // btnDashboard
+            // 
+            this.btnDashboard.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnDashboard.Location = new System.Drawing.Point(3, 3);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(288, 50);
+            this.btnDashboard.TabIndex = 6;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            // 
             // headerPanel
             // 
+            this.headerPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.headerPanel.Controls.Add(this.label1);
             this.headerPanel.Location = new System.Drawing.Point(3, 3);
             this.headerPanel.Name = "headerPanel";
@@ -128,6 +134,7 @@ namespace DebtManagementSystem
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
@@ -138,21 +145,12 @@ namespace DebtManagementSystem
             // 
             // mainPanel
             // 
+            this.mainPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mainPanel.AutoScroll = true;
             this.mainPanel.Location = new System.Drawing.Point(318, 12);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(932, 649);
             this.mainPanel.TabIndex = 1;
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.Location = new System.Drawing.Point(3, 3);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(288, 50);
-            this.btnDashboard.TabIndex = 6;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = true;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // Main_Menu
             // 
@@ -178,7 +176,6 @@ namespace DebtManagementSystem
         private System.Windows.Forms.Button currentButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnFlappyJuds;
-        private System.Windows.Forms.Button btnPaymens;
         private System.Windows.Forms.Button btnTransactions;
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Button btnCustomers;

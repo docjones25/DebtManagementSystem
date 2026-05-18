@@ -18,11 +18,6 @@ namespace DebtManagementSystem
             InitializeComponent();
         }
 
-        private void btnAddProduct_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void CustomersControl_Load(object sender, EventArgs e)
         {
             LoadCustomers();

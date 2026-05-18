@@ -22,7 +22,6 @@ C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManage
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.AddProduct.resources
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.CustomersControl.resources
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.DashboardControl.resources
-C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.PaymentsControl.resources
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.ProductsControl.resources
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.ProductCard.resources
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.TransactionsControl.resources
@@ -30,3 +29,5 @@ C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManage
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.AddCustomer.resources
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.CustomerDetailsControl.resources
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.TransactionCard.resources
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.RecentTransactionCard.resources
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.TopDebtorCard.resources

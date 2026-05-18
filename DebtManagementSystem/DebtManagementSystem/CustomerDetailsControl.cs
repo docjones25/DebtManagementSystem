@@ -123,6 +123,7 @@ namespace DebtManagementSystem
                 {
                     cmd.Parameters.AddWithValue("@first", txtFirstName.Text);
                     cmd.Parameters.AddWithValue("@last", txtLastName.Text);
+                    cmd.Parameters.AddWithValue("@id", customerID);
                     cmd.ExecuteNonQuery();
                 }
             }
