@@ -18,11 +18,11 @@ namespace DebtManagementSystem
         {
             InitializeComponent();
 
-            ApplyRoundness(btnDashboard, 25);
-            ApplyRoundness(btnCustomers, 25);
-            ApplyRoundness(btnProducts, 25);
-            ApplyRoundness(btnTransactions, 25);
-            ApplyRoundness(btnFlappyJuds, 25);
+            ApplyRoundness(btnDashboard, 10);
+            ApplyRoundness(btnCustomers, 10);
+            ApplyRoundness(btnProducts, 10);
+            ApplyRoundness(btnTransactions, 10);
+            ApplyRoundness(btnFlappyJuds, 10);
 
             Color hoverColor = ColorTranslator.FromHtml("#d8b9ff");
             Color normalColor = Color.Transparent;
@@ -86,7 +86,7 @@ namespace DebtManagementSystem
             {
                 Rectangle rect = new Rectangle(0, 0, btn.Width, btn.Height);
                 GraphicsPath path = ApplyDesign(rect, radius);
-                btn.Region = new Region(path); // make button physically rounded
+                btn.Region = new Region(path);
                 btn.Invalidate();
             };
 
@@ -97,7 +97,6 @@ namespace DebtManagementSystem
                 Rectangle rect = new Rectangle(1, 1, btn.Width - 3, btn.Height - 3);
                 GraphicsPath path = ApplyDesign(rect, radius);
 
-                // Fill the rounded path with BackColor (hover effect matches roundness)
                 using (SolidBrush brush = new SolidBrush(btn.BackColor))
                 {
                     e.Graphics.FillPath(brush, path);
@@ -130,13 +129,13 @@ namespace DebtManagementSystem
             btn.MouseEnter += (s, e) =>
             {
                 btn.BackColor = hoverColor;
-                btn.Invalidate(); // force redraw with hover color
+                btn.Invalidate();
             };
 
             btn.MouseLeave += (s, e) =>
             {
                 btn.BackColor = normalColor;
-                btn.Invalidate(); // force redraw with normal color
+                btn.Invalidate();
             };
         }
     }
