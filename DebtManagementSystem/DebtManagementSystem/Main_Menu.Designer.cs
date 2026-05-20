@@ -31,6 +31,9 @@ namespace DebtManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.mainPanel = new System.Windows.Forms.Panel();
             this.sideBarPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnFlappyJuds = new System.Windows.Forms.Button();
@@ -40,21 +43,51 @@ namespace DebtManagementSystem
             this.btnDashboard = new System.Windows.Forms.Button();
             this.headerPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.mainPanel = new System.Windows.Forms.Panel();
+            this.panel2.SuspendLayout();
             this.sideBarPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.headerPanel.SuspendLayout();
             this.SuspendLayout();
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.mainPanel);
+            this.panel2.Controls.Add(this.sideBarPanel);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1902, 1033);
+            this.panel2.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(816, 31);
+            this.label2.Margin = new System.Windows.Forms.Padding(0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 0);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Debt Management System";
+            // 
+            // mainPanel
+            // 
+            this.mainPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.mainPanel.AutoScroll = true;
+            this.mainPanel.Location = new System.Drawing.Point(482, 3);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(1417, 1027);
+            this.mainPanel.TabIndex = 3;
+            // 
             // sideBarPanel
             // 
-            this.sideBarPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.sideBarPanel.Controls.Add(this.panel1);
             this.sideBarPanel.Controls.Add(this.headerPanel);
-            this.sideBarPanel.Location = new System.Drawing.Point(12, 12);
+            this.sideBarPanel.Location = new System.Drawing.Point(3, 3);
             this.sideBarPanel.Name = "sideBarPanel";
-            this.sideBarPanel.Size = new System.Drawing.Size(300, 649);
-            this.sideBarPanel.TabIndex = 0;
+            this.sideBarPanel.Size = new System.Drawing.Size(473, 1027);
+            this.sideBarPanel.TabIndex = 2;
             // 
             // panel1
             // 
@@ -64,7 +97,7 @@ namespace DebtManagementSystem
             this.panel1.Controls.Add(this.btnProducts);
             this.panel1.Controls.Add(this.btnCustomers);
             this.panel1.Controls.Add(this.btnDashboard);
-            this.panel1.Location = new System.Drawing.Point(3, 209);
+            this.panel1.Location = new System.Drawing.Point(3, 242);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(294, 437);
             this.panel1.TabIndex = 7;
@@ -127,7 +160,7 @@ namespace DebtManagementSystem
             // 
             this.headerPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.headerPanel.Controls.Add(this.label1);
-            this.headerPanel.Location = new System.Drawing.Point(3, 3);
+            this.headerPanel.Location = new System.Drawing.Point(89, 3);
             this.headerPanel.Name = "headerPanel";
             this.headerPanel.Size = new System.Drawing.Size(294, 200);
             this.headerPanel.TabIndex = 6;
@@ -143,23 +176,15 @@ namespace DebtManagementSystem
             this.label1.TabIndex = 0;
             this.label1.Text = "Debt Management System";
             // 
-            // mainPanel
-            // 
-            this.mainPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.mainPanel.AutoScroll = true;
-            this.mainPanel.Location = new System.Drawing.Point(318, 12);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(932, 649);
-            this.mainPanel.TabIndex = 1;
-            // 
             // Main_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.mainPanel);
-            this.Controls.Add(this.sideBarPanel);
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.Controls.Add(this.panel2);
             this.Name = "Main_Menu";
+            this.Load += new System.EventHandler(this.Main_Menu_Load);
+            this.panel2.ResumeLayout(false);
             this.sideBarPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.headerPanel.ResumeLayout(false);
@@ -168,18 +193,19 @@ namespace DebtManagementSystem
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel sideBarPanel;
-        private System.Windows.Forms.Panel mainPanel;
-        private System.Windows.Forms.Panel headerPanel;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button currentButton;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnFlappyJuds;
-        private System.Windows.Forms.Button btnTransactions;
-        private System.Windows.Forms.Button btnProducts;
-        private System.Windows.Forms.Button btnCustomers;
+        private Panel panel2;
+        private Label label2;
+        private Panel mainPanel;
+        private Panel sideBarPanel;
+        private Panel panel1;
+        private Button btnFlappyJuds;
+        private Button btnTransactions;
+        private Button btnProducts;
+        private Button btnCustomers;
         private Button btnDashboard;
+        private Panel headerPanel;
+        private Label label1;
     }
 }
 

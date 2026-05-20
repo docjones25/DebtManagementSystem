@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.flowCustomers = new System.Windows.Forms.FlowLayoutPanel();
             this.topBarPanel = new System.Windows.Forms.Panel();
             this.btnAddCustomer = new System.Windows.Forms.Button();
-            this.txtSearchBar = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.topBarPanel.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +54,36 @@
             this.panel1.Size = new System.Drawing.Size(932, 649);
             this.panel1.TabIndex = 0;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(610, 172);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(114, 28);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Total Debts:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(363, 172);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 28);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Contact";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(57, 172);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(153, 28);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Customer Name";
+            // 
             // flowCustomers
             // 
             this.flowCustomers.AutoScroll = true;
@@ -67,7 +97,7 @@
             // topBarPanel
             // 
             this.topBarPanel.Controls.Add(this.btnAddCustomer);
-            this.topBarPanel.Controls.Add(this.txtSearchBar);
+            this.topBarPanel.Controls.Add(this.txtSearch);
             this.topBarPanel.Controls.Add(this.label1);
             this.topBarPanel.Location = new System.Drawing.Point(3, 3);
             this.topBarPanel.Name = "topBarPanel";
@@ -84,13 +114,14 @@
             this.btnAddCustomer.UseVisualStyleBackColor = true;
             this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
             // 
-            // txtSearchBar
+            // txtSearch
             // 
-            this.txtSearchBar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchBar.Location = new System.Drawing.Point(21, 84);
-            this.txtSearchBar.Name = "txtSearchBar";
-            this.txtSearchBar.Size = new System.Drawing.Size(882, 47);
-            this.txtSearchBar.TabIndex = 6;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(21, 84);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(882, 47);
+            this.txtSearch.TabIndex = 6;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearchBar_TextChanged);
             // 
             // label1
             // 
@@ -101,36 +132,6 @@
             this.label1.Size = new System.Drawing.Size(160, 41);
             this.label1.TabIndex = 5;
             this.label1.Text = "Customers";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(57, 172);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(153, 28);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Customer Name";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(363, 172);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 28);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Contact";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(610, 172);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 28);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Total Debts:";
             // 
             // CustomersControl
             // 
@@ -153,7 +154,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel topBarPanel;
         private System.Windows.Forms.Button btnAddCustomer;
-        private System.Windows.Forms.TextBox txtSearchBar;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowCustomers;
         private System.Windows.Forms.Label label3;

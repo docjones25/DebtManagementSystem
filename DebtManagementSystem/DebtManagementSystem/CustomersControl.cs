@@ -93,8 +93,54 @@ namespace DebtManagementSystem
 
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
-            AddCustomer form = new AddCustomer(this);
+            AddCustomer form = new AddCustomer();
             form.ShowDialog();
+        }
+
+        private void txtSearchBar_TextChanged(object sender, EventArgs e)
+        {
+            SearchCustomers();
+        }
+
+        private void SearchCustomers()
+        {
+            flowCustomers.Controls.Clear();
+
+            string connectionString =
+                @"Data Source=.\SQLEXPRESS;
+                Initial Catalog=DebtManagementSystemDB;
+                Integrated Security=True";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = @"
+                    SELECT *
+                    FROM Customers
+                    WHERE IsArchived = 0
+                    AND
+                    (
+                        FirstName LIKE @search
+                        OR LastName LIKE @search
+                    )";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue(
+                        "@search",
+                        "%" + txtSearch.Text.Trim() + "%");
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        CustomerCard card = new CustomerCard(this);
+                        card.CustomerID = Convert.ToInt32(reader["CustomerID"]);
+                        card.CustomerName =
+                            reader["FirstName"].ToString()
+                            + " "
+                            + reader["LastName"].ToString();
+                        flowCustomers.Controls.Add(card);
+                    }
+                }
+            }
         }
     }
 }

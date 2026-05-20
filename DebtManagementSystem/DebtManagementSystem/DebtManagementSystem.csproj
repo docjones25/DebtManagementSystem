@@ -59,6 +59,13 @@
     <Compile Include="AddProduct.Designer.cs">
       <DependentUpon>AddProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="CartItemCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CartItemCard.Designer.cs">
+      <DependentUpon>CartItemCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboBoxItem.cs" />
     <Compile Include="CustomerCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -126,6 +133,12 @@
     <Compile Include="TransactionCard.Designer.cs">
       <DependentUpon>TransactionCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="TransactionProductCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TransactionProductCard.Designer.cs">
+      <DependentUpon>TransactionProductCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="TransactionsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -137,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddProduct.resx">
       <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartItemCard.resx">
+      <DependentUpon>CartItemCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerCard.resx">
       <DependentUpon>CustomerCard.cs</DependentUpon>
@@ -176,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TransactionCard.resx">
       <DependentUpon>TransactionCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionProductCard.resx">
+      <DependentUpon>TransactionProductCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransactionsControl.resx">
       <DependentUpon>TransactionsControl.cs</DependentUpon>

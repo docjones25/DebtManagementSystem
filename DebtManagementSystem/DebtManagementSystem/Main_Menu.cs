@@ -44,5 +44,11 @@ namespace DebtManagementSystem
         {
             LoadControl(new TransactionsControl());
         }
+
+        private void Main_Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

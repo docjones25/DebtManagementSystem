@@ -13,11 +13,9 @@ namespace DebtManagementSystem
 {
     public partial class AddCustomer : Form
     {
-        private CustomersControl customersControl;
-        public AddCustomer(CustomersControl control)
+        public AddCustomer()
         {
             InitializeComponent();
-            customersControl = control;
         }
         private void SaveCustomer()
         {
@@ -54,7 +52,6 @@ namespace DebtManagementSystem
                 }
             }
             MessageBox.Show("Customer Added!");
-            customersControl.LoadCustomers();
             this.Close();
         }
 

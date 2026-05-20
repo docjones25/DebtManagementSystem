@@ -31,3 +31,5 @@ C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManage
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.TransactionCard.resources
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.RecentTransactionCard.resources
 C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.TopDebtorCard.resources
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.TransactionProductCard.resources
+C:\Users\Jonas\source\repos\DebtManagementSystem\DebtManagementSystem\DebtManagementSystem\obj\Debug\DebtManagementSystem.CartItemCard.resources

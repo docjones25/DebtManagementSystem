@@ -30,7 +30,7 @@
         {
             this.panelProductHeader = new System.Windows.Forms.Panel();
             this.btnAddProduct = new System.Windows.Forms.Button();
-            this.txtSearchBar = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.Products = new System.Windows.Forms.Label();
             this.flowProducts = new System.Windows.Forms.FlowLayoutPanel();
             this.panelProductHeader.SuspendLayout();
@@ -39,7 +39,7 @@
             // panelProductHeader
             // 
             this.panelProductHeader.Controls.Add(this.btnAddProduct);
-            this.panelProductHeader.Controls.Add(this.txtSearchBar);
+            this.panelProductHeader.Controls.Add(this.txtSearch);
             this.panelProductHeader.Controls.Add(this.Products);
             this.panelProductHeader.Location = new System.Drawing.Point(3, 3);
             this.panelProductHeader.Name = "panelProductHeader";
@@ -56,13 +56,14 @@
             this.btnAddProduct.UseVisualStyleBackColor = true;
             this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
-            // txtSearchBar
+            // txtSearch
             // 
-            this.txtSearchBar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchBar.Location = new System.Drawing.Point(19, 78);
-            this.txtSearchBar.Name = "txtSearchBar";
-            this.txtSearchBar.Size = new System.Drawing.Size(882, 47);
-            this.txtSearchBar.TabIndex = 2;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(19, 78);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(882, 47);
+            this.txtSearch.TabIndex = 2;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearchBar_TextChanged);
             // 
             // Products
             // 
@@ -101,7 +102,7 @@
 
         private System.Windows.Forms.Panel panelProductHeader;
         private System.Windows.Forms.Label Products;
-        private System.Windows.Forms.TextBox txtSearchBar;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.FlowLayoutPanel flowProducts;
         private System.Windows.Forms.Button btnAddProduct;
     }
